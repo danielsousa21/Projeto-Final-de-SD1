@@ -1,0 +1,134 @@
+.cake{ float: right; }
+.local{ float: right;}
+.date{ float: right; }
+.hora{ float: right; }
+.clear{ float: right;}
+.direita{float:left;}
+
+
+.link2{
+    transition: all 0.3s ease;
+    color: #00bfa5;
+}
+
+.link2:hover{
+
+    color: #a7ffeb;
+}
+
+.span{
+    float: right;
+    margin-right: 110px;
+    margin-top: 50px;
+
+}
+
+.detalhe{
+
+    float: right;
+
+}
+
+.link{
+    transition: all 0.3s ease;
+    color: #f44336;
+}
+
+.link:hover{
+
+    color: #ffcdd2;
+}
+
+.pessoa{
+
+    margin-bottom: 50px;
+}
+
+.voltar{
+
+
+    margin-top: 50px;
+    margin-left: 1500px;
+
+}
+
+.salvar{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer{
+
+    margin-top: 600px;
+
+}
+
+.addEvento{
+
+    margin-bottom: 70px;
+    margin-top: 200px;
+}
+
+
+.Date{
+
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+
+
+.divBotao{
+
+    text-align: center;
+
+}
+
+
+.Aluno{
+
+    text-align: center;
+}
+
+
+.tabelaEventos{
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.detalhesEvento{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	margin-bottom: 60px;
+}
+
+
+.formConvidado{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 60px;
+}
+
+
+.tabelaConvidado{
+	width: 50%;
+}
+
+
+.formEvento{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 60px;
+}
+
+
+.menu{
+	background-color: ##ffffff;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>EventosApp</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style/styleCss.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header>
+    <a href="/eventos"><button class="btn-floating btn-large black tooltipped pulse voltar" data-position="left" data-tooltip="Volar"><i class="large material-icons left">fast_rewind</i></button></a>
+
+    <span id="desaparecer" class="span"><th:block id="desaparecer" th:include="mensagemValidacao"></th:block></span>
+</header>
+
+    <div class="container divBotao Date">
+        <i class="large material-icons">date_range</i>
+    </div>
+
+    <div class="container salvar" >
+        <form class="container" method="post">
+                <div class="row">
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">cake</i>
+                        <input id="name" type="text"  value="" class="validate" name="nome"/>
+                        <label for="name">Nome do Evento</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">place</i>
+                        <input id="local" type="text" value="" class="validate" name="local"/>
+                        <label for="local">Local</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">event</i>
+                        <input id="data" type="date" value="" class="validate" name="data"/>
+                        <label for="data">Data</label>
+                    </div>
+
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">schedule</i>
+                        <input id="horario" type="time" value="" name="horario"/>
+                        <label for="horario">Horario</label>
+                    </div>
+                </div>
+            <button  class="btn-floating btn-large  tooltipped pulse " data-position="bottom" data-tooltip="Salvar" type="submit"><i class="large material-icons">save</i></button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script>M.AutoInit();</script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#desaparecer').fadeOut(1500);
+            }, 1000);
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tooltipped').tooltip();
+        });
+    </script>
+</body>
+</html>
